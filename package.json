@@ -2,7 +2,7 @@
   "name": "node-pizza-demo",
   "version": "0.0.0",
   "description": "Sample pizza ordering demo for meeting attendees",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/bhenderson256/node-pizza-demo",
   "dependencies": {
-    "express": "^4.10.2"
+    "body-parser": "^1.9.3",
+    "express": "^4.10.2",
+    "mongoose": "^3.8.19"
   }
 }

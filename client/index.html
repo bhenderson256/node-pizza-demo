@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pick your pizza</title>
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script src="js/lodash.min.js" type="text/javascript"></script>
+	    <script src="js/toppings.js" type="text/javascript"></script>
+	</head>
+<!--    <div class="wrapper">
+    	<div class="splash"> -->
+			<div>
+				<form id="toppings-input" action="submitpizza" method="post">
+					<a href="/submitpizza" id="pizza-image-link">
+						<img class="pizza-render" src="images/cheese_mozz_ML.png" alt="Pizza" />
+						<!-- Meats -->
+						<img class="toppings-render pepperoni" src="images/topping_pepperoni_ML_reg.png" />
+						<img class="toppings-render bacon" src="images/topping_Bacon_ML_reg.png" />
+						<img class="toppings-render beef" src="images/topping_Beef_ML_reg.png" />
+						<img class="toppings-render meatball" src="images/topping_Meatball_ML_reg.png" />
+						<img class="toppings-render chicken" src="images/topping_Chicken_ML_reg.png" />
+						<img class="toppings-render pork" src="images/topping_Pork_ML_reg.png" />
+						<img class="toppings-render salami" src="images/topping_Salami_ML_reg.png" />
+						<img class="toppings-render ham" src="images/topping_Ham_ML_reg.png" />
+						<img class="toppings-render sausage" src="images/topping_ItalianSausage_ML_reg.png" />
+						<!-- Vegetables -->
+						<img class="toppings-render mushrooms" src="images/topping_Mushroom_ML_reg.png" />
+						<img class="toppings-render green_peppers" src="images/topping_GreenBellPepper_ML_reg.png" />
+						<img class="toppings-render black_olives" src="images/topping_Olives_black_ML_reg.png" />
+						<img class="toppings-render banana_peppers" src="images/topping_BananaPepper_ML_reg.png" />
+						<img class="toppings-render cherry_peppers" src="images/topping_CherryPepper_ML_reg.png" />
+						<img class="toppings-render jalepeno" src="images/topping_Jalepeno_ML_reg.png" />
+						<img class="toppings-render red_onion" src="images/topping_Onion_red_ML_reg.png" />
+						<img class="toppings-render pineapple" src="images/topping_Pineapple_ML_reg.png" />
+						<img class="toppings-render spinach" src="images/topping_Spinach_Fresh_ML_reg.png" />
+						<img class="toppings-render tomato" src="images/topping_Tomato_ML_reg.png" />
+					</a>
+						<div id ="checkboxes">
+							<label>Meat Toppings</label>
+							<ul>
+								<li><input class="topping pepperoni" type="checkbox" name="pepperoni">Pepporoni</li>
+								<li><input class="topping sausage"type="checkbox" name="sausage">Sausauge</li>
+								<li><input class="topping bacon"type="checkbox" name="bacon">Bacon</li>
+								<li><input class="topping beef"type="checkbox" name="beef">Beef</li>
+								<li><input class="topping meatball"type="checkbox" name="meatball">Meatball</li>
+								<li><input class="topping chicken"type="checkbox" name="chicken">Chicken</li>
+								<li><input class="topping pork"type="checkbox" name="pork">Pork</li>
+								<li><input class="topping salami"type="checkbox" name="salami">Salami</li>
+								<li><input class="topping ham"type="checkbox" name="ham">Ham</li>
+							</ul>
+						</div>
+						<div id="checkboxes">
+							<label>Vegetable Toppings</label>
+							<ul>
+								<li><input class="topping mushrooms"type="checkbox" name="mushrooms">Mushrooms</li>
+								<li><input class="topping green_peppers"type="checkbox" name="green_peppers">Green Peppers</li>
+								<li><input class="topping black_olives"type="checkbox" name="black_olives">Black Olives</li>
+								<li><input class="topping banana_peppers"type="checkbox" name="banana_peppers">Banana Peppers</li>
+								<li><input class="topping cherry_peppers"type="checkbox" name="cherry_peppers">Cherry Peppers</li>
+								<li><input class="topping jalepeno"type="checkbox" name="jalepeno">Jalepeno</li>
+								<li><input class="topping red_onion"type="checkbox" name="red_onion">Onion</li>
+								<li><input class="topping pineapple"type="checkbox" name="pineapple">Pineapple</li>
+								<li><input class="topping spinach"type="checkbox" name="spinach">Spinach</li>
+								<li><input class="topping tomato"type="checkbox" name="tomato">Tomatoes</li>
+							</ul>
+						</div>
+					What's your name? <input type="text" name="name">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+<!--		</div>
+	</div> -->
+</html>
