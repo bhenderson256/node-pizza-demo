@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 
-var PizzaSchema = new mongoose.Schema({
+var pizzaToppings = {
   name: {
     type: String,
     index: true
@@ -25,10 +25,13 @@ var PizzaSchema = new mongoose.Schema({
   pineapple: Boolean,
   spinach: Boolean,
   tomatoes: Boolean,
-});
+}
+
+var PizzaSchema = new mongoose.Schema(pizzaToppings);
 
 var Pizza = mongoose.model('Pizza', PizzaSchema);
 
 module.exports = {
-  Pizza: Pizza
+  Pizza: Pizza,
+  AvailableToppings: pizzaToppings
 }
