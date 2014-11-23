@@ -40,30 +40,30 @@
 						<div class="checkbox_group">
 							<label>Meat Toppings</label>
 							<ul>
-								<li><input class="topping pepperoni" type="checkbox" name="pepperoni">Pepporoni</li>
-								<li><input class="topping sausage"type="checkbox" name="sausage">Sausauge</li>
-								<li><input class="topping bacon"type="checkbox" name="bacon">Bacon</li>
-								<li><input class="topping beef"type="checkbox" name="beef">Beef</li>
-								<li><input class="topping meatball"type="checkbox" name="meatball">Meatball</li>
-								<li><input class="topping chicken"type="checkbox" name="chicken">Chicken</li>
-								<li><input class="topping pork"type="checkbox" name="pork">Pork</li>
-								<li><input class="topping salami"type="checkbox" name="salami">Salami</li>
-								<li><input class="topping ham"type="checkbox" name="ham">Ham</li>
+								<li><label><input class="topping pepperoni" type="checkbox" name="pepperoni">Pepporoni</label></li>
+								<li><label><input class="topping sausage"type="checkbox" name="sausage">Sausauge</li>
+								<li><label><input class="topping bacon"type="checkbox" name="bacon">Bacon</li>
+								<li><label><input class="topping beef"type="checkbox" name="beef">Beef</li>
+								<li><label><input class="topping meatball"type="checkbox" name="meatball">Meatball</li>
+								<li><label><input class="topping chicken"type="checkbox" name="chicken">Chicken</li>
+								<li><label><input class="topping pork"type="checkbox" name="pork">Pork</li>
+								<li><label><input class="topping salami"type="checkbox" name="salami">Salami</li>
+								<li><label><input class="topping ham"type="checkbox" name="ham">Ham</li>
 							</ul>
 						</div>
 						<div class="checkbox_group">
 							<label>Vegetable Toppings</label>
 							<ul>
-								<li><input class="topping mushrooms"type="checkbox" name="mushrooms">Mushrooms</li>
-								<li><input class="topping green_peppers"type="checkbox" name="green_peppers">Green Peppers</li>
-								<li><input class="topping black_olives"type="checkbox" name="black_olives">Black Olives</li>
-								<li><input class="topping banana_peppers"type="checkbox" name="banana_peppers">Banana Peppers</li>
-								<li><input class="topping cherry_peppers"type="checkbox" name="cherry_peppers">Cherry Peppers</li>
-								<li><input class="topping jalepeno"type="checkbox" name="jalepeno">Jalepeno</li>
-								<li><input class="topping red_onion"type="checkbox" name="red_onion">Onion</li>
-								<li><input class="topping pineapple"type="checkbox" name="pineapple">Pineapple</li>
-								<li><input class="topping spinach"type="checkbox" name="spinach">Spinach</li>
-								<li><input class="topping tomato"type="checkbox" name="tomato">Tomatoes</li>
+								<li><label><input class="topping mushrooms"type="checkbox" name="mushrooms">Mushrooms</label></li>
+								<li><label><input class="topping green_peppers"type="checkbox" name="green_peppers">Green Peppers</label></li>
+								<li><label><input class="topping black_olives"type="checkbox" name="black_olives">Black Olives</label></li>
+								<li><label><input class="topping banana_peppers"type="checkbox" name="banana_peppers">Banana Peppers</label></li>
+								<li><label><input class="topping cherry_peppers"type="checkbox" name="cherry_peppers">Cherry Peppers</label></li>
+								<li><label><input class="topping jalepeno"type="checkbox" name="jalepeno">Jalepeno</label></li>
+								<li><label><input class="topping red_onion"type="checkbox" name="red_onion">Onion</label></li>
+								<li><label><input class="topping pineapple"type="checkbox" name="pineapple">Pineapple</label></li>
+								<li><label><input class="topping spinach"type="checkbox" name="spinach">Spinach</label></li>
+								<li><label><input class="topping tomato"type="checkbox" name="tomato">Tomatoes</label></li>
 							</ul>
 						</div>
 					</div>
