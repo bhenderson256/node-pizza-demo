@@ -2,6 +2,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var mongoose = require('mongoose');
+var cons = require('consolidate');
+var dust = require('dustjs-linkedin');
 
 var Pizza = require('../server/models/pizza').Pizza;
 var PizzaCombonitorics = require('../server/models/pizza_combinatorics').Pizza_Combinatorics;
@@ -10,6 +12,9 @@ var app = express();
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.engine('dust', cons.dust);
+app.set('view engine', 'dust');
+app.set('views', __dirname + '/views');
 
 //!! - uncommnet when mongdo is configured ---   mongoose.connect('mongodb://localhost');
 
@@ -20,6 +25,30 @@ mongoose.connect('mongodb://localhost/test');
 });*/
 
 console.log('staticpath=%s', path.join(__dirname, '../client'));
+
+app.get('/', function(req, res) {
+console.log('app.get.root');
+	res.render('login');
+});
+
+app.post('/submitname', function(req, res) {
+	if (req.body.name) {
+		res.render('pick-pizza', {name: req.body.name});
+		//res.redirect('/pick-pizza');
+	} else {
+		//!!res.redirect('/?error=name');
+		res.render('login', { errorMessage: 'Name is a required field.'});
+	}
+});
+
+app.get('/pick-pizza', function(req, res) {
+	if (req.query.name) {
+console.log('pick-pizza : name=%s', req.query.name);		
+		res.render('pick-pizza', { name: req.query.name});
+	} else {
+		res.redirect('/?error=name');
+	}
+});
 
 app.post('/submitpizza', function(req, res) {
 	try
@@ -53,8 +82,8 @@ app.get('/results', function (req, res) {
 		//var combos = new PizzaCombonitorics();
 		result = PizzaCombonitorics.GetPizzas(pizzas);
 		console.log(result);
+		res.send(JSON.stringify(result));
 	});
-	res.send(JSON.stringify(result));
 });
 
 var server = app.listen(process.env.PORT || 8080, process.env.IP || 'localhost', function () {

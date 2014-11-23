@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pick Your Pizza</title>
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
+	</head>
+		{?errorMessage}
+		<div class="error">
+			<h2>
+					{errorMessage}
+			</h2>
+		</div>
+		{/errorMessage}
+
+		<div class="login">
+			<h1>Welcome to Pick Your Pizza!</h1>
+			<img src="images/cheese_mozz_ML.png" width="150px" alt="Pizza" />
+			<form id="name-input" action="submitname" method="post">
+					<div class="login-form">
+						What's your name? <input type="text" name="name">
+						<input type="submit" value="Submit">
+					</div>						
+			</form>
+		</div>
+</html>

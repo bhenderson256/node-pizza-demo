@@ -1,3 +1,21 @@
+.login h1 {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login img {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.login-form {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #pizza-image-link {
   position: relative;
   display: block;
@@ -26,19 +44,60 @@
 #pizza-image-link .toppings-render.active {
   opacity: 1;
 }
-html > .wrapper,
+body {
+  background-color: #f0f0f0;
+}
+
+/*html > .wrapper,
 body > .wrapper {
   position: absolute;
   left: 0;
   right: 0;
   width: 320px;
   margin: 0 auto;
+}*/
+
+.checkbox_group {
+  display:inline;
+  float:left;
+}
+.checkbox_group ul {
+  list-style: none;
+}
+.checkbox_group label {
+  margin-left: 30px;
+  font-weight: bold;
+}
+#checkboxes div {
+  float:left;
 }
 #checkboxes label {
-  float: left;
+  /*float: left;*/
 }
 #checkboxes ul {
   margin: 0;
   list-style: none;
   float: left;
 }
+.checkbox_container {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+.submit_container {
+  clear: both;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+.error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('/images/error-small.png');
+}
+

@@ -23,6 +23,8 @@
   "homepage": "https://github.com/bhenderson256/node-pizza-demo",
   "dependencies": {
     "body-parser": "^1.9.3",
+    "consolidate": "^0.10.0",
+    "dustjs-linkedin": "^2.5.1",
     "express": "^4.10.2",
     "mongoose": "^3.8.19"
   }

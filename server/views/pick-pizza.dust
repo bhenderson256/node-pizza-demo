@@ -36,7 +36,8 @@
 						<img class="toppings-render spinach" src="images/topping_Spinach_Fresh_ML_reg.png" />
 						<img class="toppings-render tomato" src="images/topping_Tomato_ML_reg.png" />
 					</a>
-						<div id ="checkboxes">
+					<div class="checkbox_container">
+						<div class="checkbox_group">
 							<label>Meat Toppings</label>
 							<ul>
 								<li><input class="topping pepperoni" type="checkbox" name="pepperoni">Pepporoni</li>
@@ -50,7 +51,7 @@
 								<li><input class="topping ham"type="checkbox" name="ham">Ham</li>
 							</ul>
 						</div>
-						<div id="checkboxes">
+						<div class="checkbox_group">
 							<label>Vegetable Toppings</label>
 							<ul>
 								<li><input class="topping mushrooms"type="checkbox" name="mushrooms">Mushrooms</li>
@@ -65,8 +66,12 @@
 								<li><input class="topping tomato"type="checkbox" name="tomato">Tomatoes</li>
 							</ul>
 						</div>
-					What's your name? <input type="text" name="name">
-					<input type="submit" value="Submit">
+					</div>
+					<div class="submit_container">
+						<input type="hidden" name="name" value="{name}">
+						<input type="submit" value="Submit">
+					</div>						
+
 				</form>
 			</div>
 <!--		</div>
