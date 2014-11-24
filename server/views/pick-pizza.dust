@@ -3,6 +3,7 @@
 	<head>
 		<title>Pick your pizza</title>
 	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <link rel="stylesheet" type="text/css" href="css/pick-pizza.css">
 	    <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	    <script src="js/lodash.min.js" type="text/javascript"></script>

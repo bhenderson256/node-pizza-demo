@@ -1,0 +1,17 @@
+.login h1 {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login img {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.login-form {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}

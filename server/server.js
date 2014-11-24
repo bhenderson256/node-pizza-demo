@@ -10,6 +10,8 @@ var PizzaCombonitorics = require('../server/models/pizza_combinatorics').Pizza_C
 var app = express();
 
 app.use(express.static(path.join(__dirname, '../client')));
+
+app.use('/bower_components', express.static(path.join(__dirname, '../bower_components')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.engine('dust', cons.dust);
@@ -25,7 +27,7 @@ mongoose.connect(process.env.MONGOLAB_URI);
 });*/
 
 console.log('staticpath=%s', path.join(__dirname, '../client'));
-
+console.log('/bower_components=%s', path.join(__dirname, '../bower_components/'))
 app.get('/', function(req, res) {
 console.log('app.get.root');
 	res.render('login');
@@ -77,12 +79,11 @@ app.post('/submitpizza', function(req, res) {
 });
 
 app.get('/results', function (req, res) {
-	var result;
 	Pizza.find({}, function(err, pizzas){
 		//var combos = new PizzaCombonitorics();
-		result = PizzaCombonitorics.GetPizzas(pizzas);
-		console.log(result);
-		res.send(JSON.stringify(result));
+		pizzasToOrder = PizzaCombonitorics.GetPizzas(pizzas);
+		console.log(pizzasToOrder);
+		res.render('results',{pizzas : pizzasToOrder});
 	});
 });
 
