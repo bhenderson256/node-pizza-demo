@@ -19,7 +19,7 @@ app.set('views', __dirname + '/views');
 //!! - uncommnet when mongdo is configured ---   mongoose.connect('mongodb://localhost');
 
 //I have mongo configured on my local machine
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect(process.env.MONGOLAB_URI);
 /*app.get('/', function (req, res) {
   res.send('Hello World!')
 });*/
@@ -43,10 +43,10 @@ app.post('/submitname', function(req, res) {
 
 app.get('/pick-pizza', function(req, res) {
 	if (req.query.name) {
-console.log('pick-pizza : name=%s', req.query.name);		
+console.log('pick-pizza : name=%s', req.query.name);
 		res.render('pick-pizza', { name: req.query.name});
 	} else {
-		res.redirect('/?error=name');
+		res.render('login');
 	}
 });
 
@@ -55,25 +55,25 @@ app.post('/submitpizza', function(req, res) {
 	{
 		console.log('submitting pizza');
 		console.log(req.body);
-		
+
 		//TODO: Handle the req.body that was submitted, store in DB
-		
+
 		var pizza = new Pizza(req.body);
 
 		pizza.save(function (err) {
 			console.log('Pizza callback save.\n');
 			if (err) {
-				console.log(err);	
+				console.log(err);
 			} else {
 				console.log(req.body.toString() + ' saved successfully\n');
-			}			
+			}
 		});
 
 		res.redirect('results');
 	} catch(exception){
 		console.log(exception);
 	}
-	
+
 });
 
 app.get('/results', function (req, res) {

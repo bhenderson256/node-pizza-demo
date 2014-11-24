@@ -29,3 +29,6 @@ node_modules
 
 # C9 files
 .c9
+
+# Heroku
+.env

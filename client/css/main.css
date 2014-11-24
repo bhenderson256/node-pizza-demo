@@ -60,12 +60,14 @@ body > .wrapper {
 .checkbox_group {
   display:inline;
   float:left;
+  margin-right: 30px;
 }
 .checkbox_group ul {
   list-style: none;
+  padding-left: 0;
 }
 .checkbox_group label {
-  margin-left: 30px;
+/*  margin-left: 30px;*/
   font-weight: bold;
 }
 #checkboxes div {
@@ -80,7 +82,7 @@ body > .wrapper {
   float: left;
 }
 .checkbox_container {
-  width: 400px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;  
 }
