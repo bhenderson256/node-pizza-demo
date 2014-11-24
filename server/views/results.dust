@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Results</title>
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <link rel="stylesheet" type="text/css" href="css/results.css">
+	    <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script src="js/lodash.min.js" type="text/javascript"></script>
+	    <script src="js/toppings.js" type="text/javascript"></script>
+	    <link type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	    <script src="js/toppings.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Pizza Results</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">				
+				{#pizzas}
+				<div class="col-md-6">
+					Pizza Toppings:<br />
+					<div id="pizza-image-link">
+						<img class="pizza-render" src="images/cheese_mozz_ML.png" alt="Pizza" />
+						<!-- Meats -->
+						{#toppingImgSrc}
+							<img class="toppings-render active" src="{.}" />
+						{/toppingImgSrc}
+					</div>
+					{#displayToppings}
+						{.}<br />{~n}
+					{/displayToppings} 
+					<b>Quantity:</b>{quantity}
+					{~n}
+				</div>
+				{/pizzas}
+				
+			</div>
+		</div>
+	</body>
+</html>

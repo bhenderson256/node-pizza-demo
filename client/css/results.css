@@ -1,0 +1,28 @@
+#pizza-image-link {
+  position: relative;
+  display: block;
+}
+#pizza-image-link .pizza-render {
+  display: block;
+  width: 225px;
+  height: 225px;
+  margin: 10px auto;
+}
+#pizza-image-link .toppings-render {
+  display: block;
+  width: 225px;
+  height: 225px;
+  margin: 10px auto;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#pizza-image-link .toppings-render.active {
+  opacity: 1;
+}
